@@ -12,6 +12,81 @@ import 'package:flutter/widgets.dart';
 class $AssetsBackgroundGen {
   const $AssetsBackgroundGen();
 
+  /// File path: assets/background/card_game.png
+  AssetGenImage get cardGame =>
+      const AssetGenImage('assets/background/card_game.png');
+
+  /// File path: assets/background/fortune_reller1.png
+  AssetGenImage get fortuneReller1 =>
+      const AssetGenImage('assets/background/fortune_reller1.png');
+
+  /// File path: assets/background/fortune_reller2.png
+  AssetGenImage get fortuneReller2 =>
+      const AssetGenImage('assets/background/fortune_reller2.png');
+
+  /// File path: assets/background/left1.png
+  AssetGenImage get left1 => const AssetGenImage('assets/background/left1.png');
+
+  /// File path: assets/background/left2.png
+  AssetGenImage get left2 => const AssetGenImage('assets/background/left2.png');
+
+  /// File path: assets/background/left3.png
+  AssetGenImage get left3 => const AssetGenImage('assets/background/left3.png');
+
+  /// File path: assets/background/left4.png
+  AssetGenImage get left4 => const AssetGenImage('assets/background/left4.png');
+
+  /// File path: assets/background/left5.png
+  AssetGenImage get left5 => const AssetGenImage('assets/background/left5.png');
+
+  /// File path: assets/background/left6.png
+  AssetGenImage get left6 => const AssetGenImage('assets/background/left6.png');
+
+  /// File path: assets/background/light.png
+  AssetGenImage get light => const AssetGenImage('assets/background/light.png');
+
+  /// File path: assets/background/lock.png
+  AssetGenImage get lock => const AssetGenImage('assets/background/lock.png');
+
+  /// File path: assets/background/map.png
+  AssetGenImage get map => const AssetGenImage('assets/background/map.png');
+
+  /// File path: assets/background/right1.png
+  AssetGenImage get right1 =>
+      const AssetGenImage('assets/background/right1.png');
+
+  /// File path: assets/background/right2.png
+  AssetGenImage get right2 =>
+      const AssetGenImage('assets/background/right2.png');
+
+  /// File path: assets/background/right3.png
+  AssetGenImage get right3 =>
+      const AssetGenImage('assets/background/right3.png');
+
+  /// File path: assets/background/right4.png
+  AssetGenImage get right4 =>
+      const AssetGenImage('assets/background/right4.png');
+
+  /// File path: assets/background/right5.png
+  AssetGenImage get right5 =>
+      const AssetGenImage('assets/background/right5.png');
+
+  /// File path: assets/background/right6.png
+  AssetGenImage get right6 =>
+      const AssetGenImage('assets/background/right6.png');
+
+  /// File path: assets/background/shape_oval.png
+  AssetGenImage get shapeOval =>
+      const AssetGenImage('assets/background/shape_oval.png');
+
+  /// File path: assets/background/shape_rectangle.png
+  AssetGenImage get shapeRectangle =>
+      const AssetGenImage('assets/background/shape_rectangle.png');
+
+  /// File path: assets/background/shape_triangle.png
+  AssetGenImage get shapeTriangle =>
+      const AssetGenImage('assets/background/shape_triangle.png');
+
   /// File path: assets/background/story1.png
   AssetGenImage get story1 =>
       const AssetGenImage('assets/background/story1.png');
@@ -60,8 +135,33 @@ class $AssetsBackgroundGen {
   AssetGenImage get story9 =>
       const AssetGenImage('assets/background/story9.png');
 
+  /// File path: assets/background/toy_machine.png
+  AssetGenImage get toyMachine =>
+      const AssetGenImage('assets/background/toy_machine.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
+    cardGame,
+    fortuneReller1,
+    fortuneReller2,
+    left1,
+    left2,
+    left3,
+    left4,
+    left5,
+    left6,
+    light,
+    lock,
+    map,
+    right1,
+    right2,
+    right3,
+    right4,
+    right5,
+    right6,
+    shapeOval,
+    shapeRectangle,
+    shapeTriangle,
     story1,
     story10,
     story11,
@@ -74,11 +174,46 @@ class $AssetsBackgroundGen {
     story7,
     story8,
     story9,
+    toyMachine,
   ];
 }
 
 class $AssetsImagesGen {
   const $AssetsImagesGen();
+
+  /// File path: assets/images/0b3fdb7391194a953dd558699be86f044ac76020.png
+  AssetGenImage get a0b3fdb7391194a953dd558699be86f044ac76020 =>
+      const AssetGenImage(
+        'assets/images/0b3fdb7391194a953dd558699be86f044ac76020.png',
+      );
+
+  /// File path: assets/images/14d256a2e7938de295ea091f2ec46a6a86a08258.png
+  AssetGenImage get a14d256a2e7938de295ea091f2ec46a6a86a08258 =>
+      const AssetGenImage(
+        'assets/images/14d256a2e7938de295ea091f2ec46a6a86a08258.png',
+      );
+
+  /// File path: assets/images/1973b3f55591f3281d6ccf35eb5d8b76ff039c58 (1).png
+  AssetGenImage get a1973b3f55591f3281d6ccf35eb5d8b76ff039c581 =>
+      const AssetGenImage(
+        'assets/images/1973b3f55591f3281d6ccf35eb5d8b76ff039c58 (1).png',
+      );
+
+  /// File path: assets/images/4976c4cab14a5381a7ee49589a1c202a48cc533b.png
+  AssetGenImage get a4976c4cab14a5381a7ee49589a1c202a48cc533b =>
+      const AssetGenImage(
+        'assets/images/4976c4cab14a5381a7ee49589a1c202a48cc533b.png',
+      );
+
+  /// File path: assets/images/84495457e68dd7e61224214740b8b86397c41c41.png
+  AssetGenImage get a84495457e68dd7e61224214740b8b86397c41c41 =>
+      const AssetGenImage(
+        'assets/images/84495457e68dd7e61224214740b8b86397c41c41.png',
+      );
+
+  /// File path: assets/images/a_refresh.png
+  AssetGenImage get aRefresh =>
+      const AssetGenImage('assets/images/a_refresh.png');
 
   /// File path: assets/images/bubble.png
   AssetGenImage get bubble => const AssetGenImage('assets/images/bubble.png');
@@ -89,25 +224,76 @@ class $AssetsImagesGen {
   /// File path: assets/images/card.png
   AssetGenImage get card => const AssetGenImage('assets/images/card.png');
 
+  /// File path: assets/images/coin_shop.png
+  AssetGenImage get coinShop =>
+      const AssetGenImage('assets/images/coin_shop.png');
+
   /// File path: assets/images/dialog.png
   AssetGenImage get dialog => const AssetGenImage('assets/images/dialog.png');
+
+  /// File path: assets/images/e4c013c260bdeb210190937701a9dd4af82e9a51.png
+  AssetGenImage get e4c013c260bdeb210190937701a9dd4af82e9a51 =>
+      const AssetGenImage(
+        'assets/images/e4c013c260bdeb210190937701a9dd4af82e9a51.png',
+      );
+
+  /// File path: assets/images/left_arrow.png
+  AssetGenImage get leftArrow =>
+      const AssetGenImage('assets/images/left_arrow.png');
+
+  /// File path: assets/images/max_bet.png
+  AssetGenImage get maxBet => const AssetGenImage('assets/images/max_bet.png');
+
+  /// File path: assets/images/menu.png
+  AssetGenImage get menu => const AssetGenImage('assets/images/menu.png');
+
+  /// File path: assets/images/refresh.png
+  AssetGenImage get refresh => const AssetGenImage('assets/images/refresh.png');
 
   /// File path: assets/images/small_card.png
   AssetGenImage get smallCard =>
       const AssetGenImage('assets/images/small_card.png');
 
+  /// File path: assets/images/table.png
+  AssetGenImage get table => const AssetGenImage('assets/images/table.png');
+
   /// List of all assets
-  List<AssetGenImage> get values => [bubble, button, card, dialog, smallCard];
+  List<AssetGenImage> get values => [
+    a0b3fdb7391194a953dd558699be86f044ac76020,
+    a14d256a2e7938de295ea091f2ec46a6a86a08258,
+    a1973b3f55591f3281d6ccf35eb5d8b76ff039c581,
+    a4976c4cab14a5381a7ee49589a1c202a48cc533b,
+    a84495457e68dd7e61224214740b8b86397c41c41,
+    aRefresh,
+    bubble,
+    button,
+    card,
+    coinShop,
+    dialog,
+    e4c013c260bdeb210190937701a9dd4af82e9a51,
+    leftArrow,
+    maxBet,
+    menu,
+    refresh,
+    smallCard,
+    table,
+  ];
 }
 
 class $AssetsSvgGen {
   const $AssetsSvgGen();
 
+  /// File path: assets/svg/Property 1=Default.svg
+  String get property1Default => 'assets/svg/Property 1=Default.svg';
+
+  /// File path: assets/svg/Property 1=Variant2.svg
+  String get property1Variant2 => 'assets/svg/Property 1=Variant2.svg';
+
   /// File path: assets/svg/close.svg
   String get close => 'assets/svg/close.svg';
 
   /// List of all assets
-  List<String> get values => [close];
+  List<String> get values => [property1Default, property1Variant2, close];
 }
 
 class Assets {

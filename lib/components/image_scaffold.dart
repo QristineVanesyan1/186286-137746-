@@ -15,7 +15,7 @@ class ImageScaffold extends StatelessWidget {
           width: double.infinity,
           height: double.infinity,
         ),
-        Positioned(child: SafeArea(child: body))
+        Positioned.fill(child: SafeArea(child: body))
       ],
     ));
   }
