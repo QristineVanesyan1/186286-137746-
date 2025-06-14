@@ -12,9 +12,34 @@ import 'package:flutter/widgets.dart';
 class $AssetsBackgroundGen {
   const $AssetsBackgroundGen();
 
+  /// File path: assets/background/arrow_left.png
+  AssetGenImage get arrowLeft =>
+      const AssetGenImage('assets/background/arrow_left.png');
+
+  /// File path: assets/background/attraction_of_power_background.png
+  AssetGenImage get attractionOfPowerBackground => const AssetGenImage(
+    'assets/background/attraction_of_power_background.png',
+  );
+
+  /// File path: assets/background/automat.png
+  AssetGenImage get automat =>
+      const AssetGenImage('assets/background/automat.png');
+
   /// File path: assets/background/card_game.png
   AssetGenImage get cardGame =>
       const AssetGenImage('assets/background/card_game.png');
+
+  /// File path: assets/background/coin_container.png
+  AssetGenImage get coinContainer =>
+      const AssetGenImage('assets/background/coin_container.png');
+
+  /// File path: assets/background/coin_disable.png
+  AssetGenImage get coinDisable =>
+      const AssetGenImage('assets/background/coin_disable.png');
+
+  /// File path: assets/background/coin_enable.png
+  AssetGenImage get coinEnable =>
+      const AssetGenImage('assets/background/coin_enable.png');
 
   /// File path: assets/background/fortune_reller1.png
   AssetGenImage get fortuneReller1 =>
@@ -23,6 +48,14 @@ class $AssetsBackgroundGen {
   /// File path: assets/background/fortune_reller2.png
   AssetGenImage get fortuneReller2 =>
       const AssetGenImage('assets/background/fortune_reller2.png');
+
+  /// File path: assets/background/high_striker_machine.png
+  AssetGenImage get highStrikerMachine =>
+      const AssetGenImage('assets/background/high_striker_machine.png');
+
+  /// File path: assets/background/hummer.png
+  AssetGenImage get hummer =>
+      const AssetGenImage('assets/background/hummer.png');
 
   /// File path: assets/background/left1.png
   AssetGenImage get left1 => const AssetGenImage('assets/background/left1.png');
@@ -135,15 +168,42 @@ class $AssetsBackgroundGen {
   AssetGenImage get story9 =>
       const AssetGenImage('assets/background/story9.png');
 
+  /// File path: assets/background/strongman.png
+  AssetGenImage get strongman =>
+      const AssetGenImage('assets/background/strongman.png');
+
   /// File path: assets/background/toy_machine.png
   AssetGenImage get toyMachine =>
       const AssetGenImage('assets/background/toy_machine.png');
 
+  /// File path: assets/background/toy_machine_backgorung.png
+  AssetGenImage get toyMachineBackgorung =>
+      const AssetGenImage('assets/background/toy_machine_backgorung.png');
+
+  /// File path: assets/background/toy_machine_loose.png
+  AssetGenImage get toyMachineLoose =>
+      const AssetGenImage('assets/background/toy_machine_loose.png');
+
+  /// File path: assets/background/toys.png
+  AssetGenImage get toys => const AssetGenImage('assets/background/toys.png');
+
+  /// File path: assets/background/you_win.png
+  AssetGenImage get youWin =>
+      const AssetGenImage('assets/background/you_win.png');
+
   /// List of all assets
   List<AssetGenImage> get values => [
+    arrowLeft,
+    attractionOfPowerBackground,
+    automat,
     cardGame,
+    coinContainer,
+    coinDisable,
+    coinEnable,
     fortuneReller1,
     fortuneReller2,
+    highStrikerMachine,
+    hummer,
     left1,
     left2,
     left3,
@@ -174,7 +234,12 @@ class $AssetsBackgroundGen {
     story7,
     story8,
     story9,
+    strongman,
     toyMachine,
+    toyMachineBackgorung,
+    toyMachineLoose,
+    toys,
+    youWin,
   ];
 }
 

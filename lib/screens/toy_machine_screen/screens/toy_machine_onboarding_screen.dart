@@ -29,7 +29,11 @@ class ToyMachineOnboardingScreen extends StatelessWidget {
                 ),
               ),
             ),
-            AppButton(text: 'Continue', onTap: () {}),
+            AppButton(text: 'Continue', onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>
+              ToyMachineOnboardingScreen()
+              ));
+            }),
           ],
         ));
   }

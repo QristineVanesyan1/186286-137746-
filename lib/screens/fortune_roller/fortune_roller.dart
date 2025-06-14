@@ -3,6 +3,7 @@ import 'package:game/components/app_button.dart';
 import 'package:game/components/bubble_dialog.dart';
 import 'package:game/components/image_scaffold.dart';
 import 'package:game/gen/assets.gen.dart';
+import 'package:game/screens/fortune_roller/card_game_screen.dart';
 import 'package:game/screens/onboarding_screen/onboarding_screen.dart';
 
 class FortuneRollerScreen extends StatefulWidget {
@@ -60,7 +61,10 @@ class _FortuneRoller2 extends StatelessWidget {
               _FortuneBubbleWidget(
                   text:
                       "Well, hello, I've heard a lot about you, traveler. Thank you for finding my cards! A circus raccoon got into my tent and scattered them all over the circus, you helped me out! In gratitude, I'll tell your fortune, sit down.",
-                  onTap: () {})
+                  onTap: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                        builder: (context) => CardGameScreen()));
+                  })
             ],
           ),
         ));
