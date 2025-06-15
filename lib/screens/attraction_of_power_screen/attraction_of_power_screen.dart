@@ -15,7 +15,7 @@ class _HighStrikerGameState extends State<HighStrikerGame>
   double meterHeight = 0;
   bool isAnimating = false;
   late AnimationController _controller;
-  late Animation<double> _animation;
+  late Animation<double> _rotation;
   final math.Random _random = math.Random();
 
   @override
@@ -31,21 +31,17 @@ class _HighStrikerGameState extends State<HighStrikerGame>
     final strength = _random.nextDouble(); // 0.0 - 1.0
     final targetHeight = strength * 250;
 
-    _animation =
-        Tween<double>(begin: 0, end: targetHeight).animate(CurvedAnimation(
-      parent: _controller,
-      curve: Curves.easeOut,
-    ))
-          ..addListener(() {
-            setState(() {
-              meterHeight = _animation.value;
-            });
-          })
-          ..addStatusListener((status) {
-            if (status == AnimationStatus.completed) {
-              setState(() => isAnimating = false);
-            }
-          });
+    _rotation = Tween<double>(begin: -1.0, end: 1.0).animate(_controller);
+    // ..addListener(() {
+    //   setState(() {
+    //     meterHeight = _animation.value;
+    //   });
+    // })
+    // ..addStatusListener((status) {
+    //   if (status == AnimationStatus.completed) {
+    //     setState(() => isAnimating = false);
+    //   }
+    // });
 
     setState(() => isAnimating = true);
     _controller.forward(from: 0);
@@ -82,18 +78,19 @@ class _HighStrikerGameState extends State<HighStrikerGame>
             bottom: 0,
             child: Column(
               children: [
-                Stack(
-                  alignment: Alignment.bottomCenter,
-                  children: [
-                    Image.asset(Assets.background.highStrikerMachine.path,
-                        height: 300),
-                    Container(
-                      width: 20,
-                      height: meterHeight,
-                      color: Colors.redAccent,
-                    ),
-                  ],
-                ),
+                // Stack(
+                //   alignment: Alignment.bottomCenter,
+                //   children: [
+                //     Image.asset(Assets.background.highStrikerMachine.path,
+                //         height: 300),
+                //     Container(
+                //       width: 20,
+                //       height: meterHeight,
+                //       color: Colors.redAccent,
+                //     ),
+                //   ],
+                // ),
+                RotateHammerAnimation(),
                 SizedBox(height: 20),
                 ElevatedButton(
                   onPressed: _hit,
@@ -118,75 +115,67 @@ class _HighStrikerGameState extends State<HighStrikerGame>
   }
 }
 
-class HammerSwing extends StatefulWidget {
-  const HammerSwing({super.key});
-
+class RotateHammerAnimation extends StatefulWidget {
   @override
-  State<HammerSwing> createState() => _HammerSwingState();
+  _RotateHammerAnimationState createState() => _RotateHammerAnimationState();
 }
 
-class _HammerSwingState extends State<HammerSwing>
+class _RotateHammerAnimationState extends State<RotateHammerAnimation>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
-  late TweenSequence<double> _rotation;
+  late Animation<double> _rotation;
 
   @override
   void initState() {
     super.initState();
 
     _controller = AnimationController(
-      duration: Duration(milliseconds: 700),
       vsync: this,
+      duration: Duration(seconds: 1),
     );
 
-    // _rotation = TweenSequence<double>([
-    //   TweenSequenceItem(tween: Tween(begin: -pi / 4, end: pi / 8), weight: 70),
-    //   TweenSequenceItem(tween: Tween(begin: pi / 8, end: 0), weight: 30),
-    // ]).animate(CurvedAnimation(
-    //   parent: _controller,
-    //   curve: Curves.easeInOut,
-    // ));
+    _rotation = Tween<double>(
+      begin: math.pi / 2, // 90°
+      end: math.pi, // 180°
+    ).animate(CurvedAnimation(parent: _controller, curve: Curves.easeOut));
 
-    // Optional auto-play
-    Future.delayed(Duration(milliseconds: 300), () {
-      _controller.forward();
-    });
-  }
-
-  void _swingHammer() {
-    _controller.forward(from: 0);
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.brown.shade900,
-      body: Center(
-        child: GestureDetector(
-          onTap: _swingHammer,
-          child: AnimatedBuilder(
-            animation: _rotation,
-            builder: (_, child) {
-              return Transform.rotate(
-                angle: _rotation.value,
-                alignment: Alignment.bottomLeft,
-                child: child,
-              );
-            },
-            child: Image.asset(
-              Assets.background.hummer
-                  .path, // Your hammer image (use the one you showed)
-              width: 150,
-            ),
-          ),
-        ),
-      ),
-    );
+    _controller.forward();
   }
 
   @override
   void dispose() {
     _controller.dispose();
     super.dispose();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.brown[800],
+      body: Center(
+        child: Column(
+          children: [
+            TextButton(
+                onPressed: () {
+                  setState(() {
+                    _controller.forward();
+                  });
+                },
+                child: Text('Start!')),
+            AnimatedBuilder(
+              animation: _rotation,
+              builder: (_, child) {
+                return Transform.rotate(
+                  angle: _rotation.value,
+                  alignment: Alignment.bottomCenter, // Вращение снизу
+                  child: child,
+                );
+              },
+              child: Image.asset(Assets.background.hummer.path, height: 200),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 }

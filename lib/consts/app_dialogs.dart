@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:game/components/app_button.dart';
 import 'package:game/components/dialog_container.dart';
+import 'package:game/components/title_text.dart';
 import 'package:game/gen/assets.gen.dart';
 
 class AppDialogs {
@@ -64,8 +65,30 @@ class AppDialogs {
                     GestureDetector(
                         onTap: () => Navigator.of(context).pop(),
                         child: SvgPicture.asset(Assets.svg.close)),
-                    Image.asset(Assets.images.coinShop.path,
-                        height: MediaQuery.of(context).size.height - 100),
+                    Stack(
+                      children: [
+                        Positioned.fill(
+                          child: Container(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Row(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    Image.asset(Assets.background.shop1.path),
+                                    Image.asset(Assets.background.shop2.path),
+                                    Image.asset(Assets.background.shop3.path),
+                                  ],
+                                ),
+                              ],
+                            ),
+                          ),
+                        ),
+                        Image.asset(Assets.images.coinShop.path,
+                            height: MediaQuery.of(context).size.height - 100),
+                      ],
+                    ),
                   ],
                 )),
           ),
@@ -74,7 +97,15 @@ class AppDialogs {
     );
   }
 
-  static void showMenuDialog(BuildContext context) {
+  static void showMenuDialog(BuildContext context,
+      {required bool music,
+      required bool sound,
+      required ValueChanged<bool> onMusic,
+      required ValueChanged<bool> onSound,
+      required Widget child}) {
+    ValueNotifier<bool> _soundValueNotifer = ValueNotifier<bool>(sound);
+    ValueNotifier<bool> _musicValueNotifer = ValueNotifier<bool>(music);
+
     showGeneralDialog(
       barrierDismissible: true,
       barrierLabel: "BlurredDialog",
@@ -100,23 +131,7 @@ class AppDialogs {
                                 child: SvgPicture.asset(Assets.svg.close)),
                           ),
                         ),
-                        Positioned(
-                          child: Padding(
-                            padding: const EdgeInsets.only(top: 100.0),
-                            child: DialogContainer(
-                                child: Padding(
-                              padding: const EdgeInsets.all(20.0),
-                              child: Text(
-                                "Play games to unlock new locations and collect tarot cards.",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                    color: Colors.white,
-                                    fontFamily: 'AlfaSlabOne',
-                                    fontSize: 14),
-                              ),
-                            )),
-                          ),
-                        ),
+                        child,
                         Positioned.fill(
                           child: Align(
                             alignment: Alignment.topCenter,

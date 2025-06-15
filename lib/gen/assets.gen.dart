@@ -18,8 +18,7 @@ class $AssetsBackgroundGen {
 
   /// File path: assets/background/attraction_of_power_background.png
   AssetGenImage get attractionOfPowerBackground => const AssetGenImage(
-    'assets/background/attraction_of_power_background.png',
-  );
+      'assets/background/attraction_of_power_background.png');
 
   /// File path: assets/background/automat.png
   AssetGenImage get automat =>
@@ -28,6 +27,9 @@ class $AssetsBackgroundGen {
   /// File path: assets/background/card_game.png
   AssetGenImage get cardGame =>
       const AssetGenImage('assets/background/card_game.png');
+
+  /// File path: assets/background/cards.png
+  AssetGenImage get cards => const AssetGenImage('assets/background/cards.png');
 
   /// File path: assets/background/coin_container.png
   AssetGenImage get coinContainer =>
@@ -40,6 +42,14 @@ class $AssetsBackgroundGen {
   /// File path: assets/background/coin_enable.png
   AssetGenImage get coinEnable =>
       const AssetGenImage('assets/background/coin_enable.png');
+
+  /// File path: assets/background/coin_icon.png
+  AssetGenImage get coinIcon =>
+      const AssetGenImage('assets/background/coin_icon.png');
+
+  /// File path: assets/background/cutted_sun_csrd.png
+  AssetGenImage get cuttedSunCsrd =>
+      const AssetGenImage('assets/background/cutted_sun_csrd.png');
 
   /// File path: assets/background/fortune_reller1.png
   AssetGenImage get fortuneReller1 =>
@@ -81,6 +91,10 @@ class $AssetsBackgroundGen {
   /// File path: assets/background/lock.png
   AssetGenImage get lock => const AssetGenImage('assets/background/lock.png');
 
+  /// File path: assets/background/locked.png
+  AssetGenImage get locked =>
+      const AssetGenImage('assets/background/locked.png');
+
   /// File path: assets/background/map.png
   AssetGenImage get map => const AssetGenImage('assets/background/map.png');
 
@@ -119,6 +133,15 @@ class $AssetsBackgroundGen {
   /// File path: assets/background/shape_triangle.png
   AssetGenImage get shapeTriangle =>
       const AssetGenImage('assets/background/shape_triangle.png');
+
+  /// File path: assets/background/shop1.png
+  AssetGenImage get shop1 => const AssetGenImage('assets/background/shop1.png');
+
+  /// File path: assets/background/shop2.png
+  AssetGenImage get shop2 => const AssetGenImage('assets/background/shop2.png');
+
+  /// File path: assets/background/shop3.png
+  AssetGenImage get shop3 => const AssetGenImage('assets/background/shop3.png');
 
   /// File path: assets/background/story1.png
   AssetGenImage get story1 =>
@@ -193,54 +216,61 @@ class $AssetsBackgroundGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
-    arrowLeft,
-    attractionOfPowerBackground,
-    automat,
-    cardGame,
-    coinContainer,
-    coinDisable,
-    coinEnable,
-    fortuneReller1,
-    fortuneReller2,
-    highStrikerMachine,
-    hummer,
-    left1,
-    left2,
-    left3,
-    left4,
-    left5,
-    left6,
-    light,
-    lock,
-    map,
-    right1,
-    right2,
-    right3,
-    right4,
-    right5,
-    right6,
-    shapeOval,
-    shapeRectangle,
-    shapeTriangle,
-    story1,
-    story10,
-    story11,
-    story12,
-    story2,
-    story3,
-    story4,
-    story5,
-    story6,
-    story7,
-    story8,
-    story9,
-    strongman,
-    toyMachine,
-    toyMachineBackgorung,
-    toyMachineLoose,
-    toys,
-    youWin,
-  ];
+        arrowLeft,
+        attractionOfPowerBackground,
+        automat,
+        cardGame,
+        cards,
+        coinContainer,
+        coinDisable,
+        coinEnable,
+        coinIcon,
+        cuttedSunCsrd,
+        fortuneReller1,
+        fortuneReller2,
+        highStrikerMachine,
+        hummer,
+        left1,
+        left2,
+        left3,
+        left4,
+        left5,
+        left6,
+        light,
+        lock,
+        locked,
+        map,
+        right1,
+        right2,
+        right3,
+        right4,
+        right5,
+        right6,
+        shapeOval,
+        shapeRectangle,
+        shapeTriangle,
+        shop1,
+        shop2,
+        shop3,
+        story1,
+        story10,
+        story11,
+        story12,
+        story2,
+        story3,
+        story4,
+        story5,
+        story6,
+        story7,
+        story8,
+        story9,
+        strongman,
+        toyMachine,
+        toyMachineBackgorung,
+        toyMachineLoose,
+        toys,
+        youWin
+      ];
 }
 
 class $AssetsImagesGen {
@@ -249,32 +279,27 @@ class $AssetsImagesGen {
   /// File path: assets/images/0b3fdb7391194a953dd558699be86f044ac76020.png
   AssetGenImage get a0b3fdb7391194a953dd558699be86f044ac76020 =>
       const AssetGenImage(
-        'assets/images/0b3fdb7391194a953dd558699be86f044ac76020.png',
-      );
+          'assets/images/0b3fdb7391194a953dd558699be86f044ac76020.png');
 
   /// File path: assets/images/14d256a2e7938de295ea091f2ec46a6a86a08258.png
   AssetGenImage get a14d256a2e7938de295ea091f2ec46a6a86a08258 =>
       const AssetGenImage(
-        'assets/images/14d256a2e7938de295ea091f2ec46a6a86a08258.png',
-      );
+          'assets/images/14d256a2e7938de295ea091f2ec46a6a86a08258.png');
 
   /// File path: assets/images/1973b3f55591f3281d6ccf35eb5d8b76ff039c58 (1).png
   AssetGenImage get a1973b3f55591f3281d6ccf35eb5d8b76ff039c581 =>
       const AssetGenImage(
-        'assets/images/1973b3f55591f3281d6ccf35eb5d8b76ff039c58 (1).png',
-      );
+          'assets/images/1973b3f55591f3281d6ccf35eb5d8b76ff039c58 (1).png');
 
   /// File path: assets/images/4976c4cab14a5381a7ee49589a1c202a48cc533b.png
   AssetGenImage get a4976c4cab14a5381a7ee49589a1c202a48cc533b =>
       const AssetGenImage(
-        'assets/images/4976c4cab14a5381a7ee49589a1c202a48cc533b.png',
-      );
+          'assets/images/4976c4cab14a5381a7ee49589a1c202a48cc533b.png');
 
   /// File path: assets/images/84495457e68dd7e61224214740b8b86397c41c41.png
   AssetGenImage get a84495457e68dd7e61224214740b8b86397c41c41 =>
       const AssetGenImage(
-        'assets/images/84495457e68dd7e61224214740b8b86397c41c41.png',
-      );
+          'assets/images/84495457e68dd7e61224214740b8b86397c41c41.png');
 
   /// File path: assets/images/a_refresh.png
   AssetGenImage get aRefresh =>
@@ -299,8 +324,7 @@ class $AssetsImagesGen {
   /// File path: assets/images/e4c013c260bdeb210190937701a9dd4af82e9a51.png
   AssetGenImage get e4c013c260bdeb210190937701a9dd4af82e9a51 =>
       const AssetGenImage(
-        'assets/images/e4c013c260bdeb210190937701a9dd4af82e9a51.png',
-      );
+          'assets/images/e4c013c260bdeb210190937701a9dd4af82e9a51.png');
 
   /// File path: assets/images/left_arrow.png
   AssetGenImage get leftArrow =>
@@ -324,25 +348,25 @@ class $AssetsImagesGen {
 
   /// List of all assets
   List<AssetGenImage> get values => [
-    a0b3fdb7391194a953dd558699be86f044ac76020,
-    a14d256a2e7938de295ea091f2ec46a6a86a08258,
-    a1973b3f55591f3281d6ccf35eb5d8b76ff039c581,
-    a4976c4cab14a5381a7ee49589a1c202a48cc533b,
-    a84495457e68dd7e61224214740b8b86397c41c41,
-    aRefresh,
-    bubble,
-    button,
-    card,
-    coinShop,
-    dialog,
-    e4c013c260bdeb210190937701a9dd4af82e9a51,
-    leftArrow,
-    maxBet,
-    menu,
-    refresh,
-    smallCard,
-    table,
-  ];
+        a0b3fdb7391194a953dd558699be86f044ac76020,
+        a14d256a2e7938de295ea091f2ec46a6a86a08258,
+        a1973b3f55591f3281d6ccf35eb5d8b76ff039c581,
+        a4976c4cab14a5381a7ee49589a1c202a48cc533b,
+        a84495457e68dd7e61224214740b8b86397c41c41,
+        aRefresh,
+        bubble,
+        button,
+        card,
+        coinShop,
+        dialog,
+        e4c013c260bdeb210190937701a9dd4af82e9a51,
+        leftArrow,
+        maxBet,
+        menu,
+        refresh,
+        smallCard,
+        table
+      ];
 }
 
 class $AssetsSvgGen {
@@ -354,11 +378,15 @@ class $AssetsSvgGen {
   /// File path: assets/svg/Property 1=Variant2.svg
   String get property1Variant2 => 'assets/svg/Property 1=Variant2.svg';
 
+  /// File path: assets/svg/card_unlocked.svg
+  String get cardUnlocked => 'assets/svg/card_unlocked.svg';
+
   /// File path: assets/svg/close.svg
   String get close => 'assets/svg/close.svg';
 
   /// List of all assets
-  List<String> get values => [property1Default, property1Variant2, close];
+  List<String> get values =>
+      [property1Default, property1Variant2, cardUnlocked, close];
 }
 
 class Assets {
@@ -370,7 +398,11 @@ class Assets {
 }
 
 class AssetGenImage {
-  const AssetGenImage(this._assetName, {this.size, this.flavors = const {}});
+  const AssetGenImage(
+    this._assetName, {
+    this.size,
+    this.flavors = const {},
+  });
 
   final String _assetName;
 
@@ -430,8 +462,15 @@ class AssetGenImage {
     );
   }
 
-  ImageProvider provider({AssetBundle? bundle, String? package}) {
-    return AssetImage(_assetName, bundle: bundle, package: package);
+  ImageProvider provider({
+    AssetBundle? bundle,
+    String? package,
+  }) {
+    return AssetImage(
+      _assetName,
+      bundle: bundle,
+      package: package,
+    );
   }
 
   String get path => _assetName;
